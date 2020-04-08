@@ -32,9 +32,9 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Patrik Arvidsson, Interdisciplinary interaction designer"
-          description="Patrik is an interdisciplinary designer living in Gothenburg, Sweden. He helps clients reimagine, prototype and design solutions for human interaction problems."
-          keywords={[`design`, `blog`, `ui`, `ux`, `gatsby`, `react`]}
+          title="Julian Stephens"
+          description="Julian is a fourth-year computer science student at Georgia Tech. He likes to think of himself as a fullstack designer."
+          keywords={[`design`, `blog`, `ui`, `ux`, `frontend`, `react`]}
         />
         <Hero>
           <div>

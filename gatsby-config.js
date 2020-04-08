@@ -28,7 +28,7 @@ module.exports = {
     title: 'Julian Stephens',
     author: 'Julian Stephens',
     description:
-      'Interdisciplinary designer living in Gothenburg, Sweden. I help clients reimagine, prototype and design solutions for human interaction problems.',
+      'Fourth-year computer science student at Georgia Tech. I\'m a designer who codes.',
     siteUrl,
     social: {
       twitter: 'patrikarvidsson',
@@ -82,7 +82,7 @@ module.exports = {
         background_color: '#3273dc',
         theme_color: '#3273dc',
         display: 'minimal-ui',
-        icon: 'src/images/logo-blue.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicons/icon-512x512.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -119,20 +119,25 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        id: 'GTM-56CKRTV',
-
-        // Include GTM in development.
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-132776712-2",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
       },
     },
     `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://patrikarvidsson.com`,
+        siteUrl: `https://julianstephens.net`,
       },
     },
     //{
