@@ -94,7 +94,7 @@ export const pageQuery = graphql`
       }
     }
     allContentfulSettings(
-      filter: { contentful_id: { eq: "4YFMbGrvKsFO9xnO8KUzFz" } }
+      filter: { contentful_id: { eq: "1LELDthnT6CgRFXFnH8nBV" } }
     ) {
       edges {
         node {

@@ -21,12 +21,12 @@ if (!spaceId || !accessToken) {
 }
 
 const siteUrl =
-  process.env.URL || process.env.DEPLOY_URL || `https://patrikarvidsson.com`
+  process.env.URL || process.env.DEPLOY_URL || `https://julianstephens.net`
 
 module.exports = {
   siteMetadata: {
-    title: 'Patrik Arvidsson',
-    author: 'Patrik Arvidsson',
+    title: 'Julian Stephens',
+    author: 'Julian Stephens',
     description:
       'Interdisciplinary designer living in Gothenburg, Sweden. I help clients reimagine, prototype and design solutions for human interaction problems.',
     siteUrl,
@@ -76,8 +76,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Patrik Arvidsson',
-        short_name: 'Patrik Arvidsson',
+        name: 'Julian Stephens',
+        short_name: 'Julian Stephens',
         start_url: '/',
         background_color: '#3273dc',
         theme_color: '#3273dc',
