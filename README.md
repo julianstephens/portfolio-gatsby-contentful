@@ -1,4 +1,5 @@
 # Julian Stephens
+This is my personal portfolio site built on Gatbsy, Tailwind, and Emotion. It also utilizes Contentful.
 
 ## Credits
 
