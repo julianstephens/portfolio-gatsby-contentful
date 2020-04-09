@@ -20,21 +20,21 @@ const Subtitle = styled.span`
   ${tw`text-lg`};
 `
 
-class JournalIndex extends React.Component {
+class BlogIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     return (
       <Layout>
         <SEO
-          title="Journal - Patrik Arvidsson"
-          description="A collection of articles about design, workflows and other things."
-          keywords={[`design`, `blog`, `ui`, `ux`, `gatsby`, `react`]}
+          title="Blog - Julian Stephens"
+          description="A random assortment of things I find interesting enough to write about."
+          keywords={[`design`, `blog`, `writing`, `internet`, `productivity`, `philosophy`]}
         />
         <Wrapper>
           <header>
-            <Title>Journal</Title>
+            <Title>Blog</Title>
             <Subtitle>
-              A collection of articles about design, workflows and other things.
+            A random assortment of things I find interesting enough to write about.
             </Subtitle>
           </header>
           <Body>
@@ -48,10 +48,10 @@ class JournalIndex extends React.Component {
   }
 }
 
-export default JournalIndex
+export default BlogIndex
 
 export const pageQuery = graphql`
-  query JournalQuery {
+  query BlogQuery {
     allContentfulBlogPost(
       sort: { fields: [publishDate], order: [DESC] }
       limit: 6

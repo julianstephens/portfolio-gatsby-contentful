@@ -31,7 +31,7 @@ module.exports = {
       'Fourth-year computer science student at Georgia Tech. I\'m a designer who codes.',
     siteUrl,
     social: {
-      twitter: 'patrikarvidsson',
+      twitter: '',
     },
   },
   plugins: [
@@ -82,7 +82,7 @@ module.exports = {
         background_color: '#3273dc',
         theme_color: '#3273dc',
         display: 'minimal-ui',
-        icon: 'src/images/favicons/icon-512x512.png', // This path is relative to the root of the site.
+        icon: 'src/images/logo-xl.png', // This path is relative to the root of the site.
       },
     },
     {

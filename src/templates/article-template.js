@@ -51,8 +51,8 @@ class BlogPostTemplate extends React.Component {
                   {tag}
                 </span>
               ))}
-              &nbsp;·&nbsp;
-              {post.concept === true && <Concept>Concept</Concept>}
+              {/* &nbsp;·&nbsp;
+              {post.concept === true && <Concept>Concept</Concept>} */}
             </Tags>
             <Title>{post.title}</Title>
             <PublishDate>{post.publishDate}</PublishDate>

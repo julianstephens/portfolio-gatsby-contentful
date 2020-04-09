@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
-import logo from '../images/logo-black.svg'
-import webring from '../images/icon-webring.svg'
+import logo from '../images/logo-xl.png'
 
 const Container = styled.header`
   ${tw``};
@@ -45,18 +44,13 @@ const Header = ({ siteTitle }) => (
       <Nav>
         <NavList>
           <NavItem>
-            <NavItemLink to="/portfolio/">Portfolio</NavItemLink>
+            <NavItemLink to="/portfolio/">Work</NavItemLink>
           </NavItem>
           <NavItem>
-            <NavItemLink to="/journal/">Journal</NavItemLink>
+            <NavItemLink to="/blog/">Blog</NavItemLink>
           </NavItem>
           <NavItem>
             <NavItemLink to="/about/">About</NavItemLink>
-          </NavItem>
-          <NavItem>
-            <WebringLink href="https://webring.xxiivv.com/#random" target='_blank'>
-              <Webring src={webring} alt="Webring" />
-            </WebringLink>
           </NavItem>
         </NavList>
       </Nav>

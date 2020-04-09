@@ -25,8 +25,8 @@ class AboutPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="About Patrik, Interdisciplinary interaction designer"
-          description="Patrik is an interdisciplinary designer living in Gothenburg, Sweden. He helps clients reimagine, prototype and design solutions for human interaction problems."
+          title="About Julian"
+          description="Julian is a fourth-year computer science student at Georgia Tech. He likes to think of himself as a designer who codes."
           keywords={[`design`, `blog`, `ui`, `ux`, `gatsby`, `react`]}
         />
         <Wrapper>

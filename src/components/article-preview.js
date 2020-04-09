@@ -32,7 +32,7 @@ const PreviewArticle = ({ article }) => (
   <Container>
     <TextWrapper>
       <Title>
-        <Anchor to={`/journal/${article.slug}`}>{article.title}</Anchor>
+        <Anchor to={`/blog/${article.slug}`}>{article.title}</Anchor>
       </Title>
       <Description>{article.description}</Description>
       <PublishDate>{article.publishDate}</PublishDate>

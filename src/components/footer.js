@@ -10,16 +10,12 @@ const Inner = styled.div`
 
 const Footer = () => (
   <Container>
-    <Inner>
+    {/* <Inner>
       Site built with <a href="https://www.gatsbyjs.org/">Gatsby</a>,{' '}
       <a href="https://tailwindcss.com/">Tailwind</a> and beer. Content served
       from <a href="https://www.contentful.com/">Contentful</a>.
-    </Inner>
+    </Inner> */}
     <Inner>
-      Open-sourced at{' '}
-      <a href="https://github.com/patrikarvidsson/portfolio-gatsby-contentful">
-        https://github.com/patrikarvidsson
-      </a>
     </Inner>
   </Container>
 )

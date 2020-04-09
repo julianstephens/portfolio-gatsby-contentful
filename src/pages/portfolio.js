@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import SmallCase from '../components/case-small'
+import PreviewCase from '../components/case-preview'
 
 const Hero = styled.div`
   ${tw`w-full xl:w-3/4 mt-12 mb-10 md:my-24 flex items-center`};
@@ -35,19 +36,14 @@ class PortfolioPage extends React.Component {
         <Hero>
           <div>
             <Title>
-              Clients I've worked with and projects I've been involved in
-              throughout the years.
+              A collection of my recent projects and internships.
             </Title>
-            <Subtitle>
-              Design studies and explorations can be found in my{' '}
-              <Link to="/journal">journal</Link>.
-            </Subtitle>
           </div>
         </Hero>
         <Section>
           <Articles>
             {cases.map(({ node }) => {
-              return <SmallCase entry={node} key={node.slug} />
+              return <PreviewCase entry={node} key={node.slug} />
             })}
           </Articles>
         </Section>
@@ -71,6 +67,12 @@ export const pageQuery = graphql`
           slug
           publishDate(formatString: "MMMM Do, YYYY")
           tags
+          heroImage {
+            fluid(maxWidth: 1200, maxHeight: 875, resizingBehavior: FILL) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+          clientColor
           description
         }
       }
