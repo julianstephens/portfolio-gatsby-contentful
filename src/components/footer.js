@@ -15,8 +15,7 @@ const Footer = () => (
       <a href="https://tailwindcss.com/">Tailwind</a> and beer. Content served
       from <a href="https://www.contentful.com/">Contentful</a>.
     </Inner> */}
-    <Inner>
-    </Inner>
+    <Inner></Inner>
   </Container>
 )
 

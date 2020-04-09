@@ -28,13 +28,21 @@ class BlogIndex extends React.Component {
         <SEO
           title="Blog - Julian Stephens"
           description="A random assortment of things I find interesting enough to write about."
-          keywords={[`design`, `blog`, `writing`, `internet`, `productivity`, `philosophy`]}
+          keywords={[
+            `design`,
+            `blog`,
+            `writing`,
+            `internet`,
+            `productivity`,
+            `philosophy`,
+          ]}
         />
         <Wrapper>
           <header>
             <Title>Blog</Title>
             <Subtitle>
-            A random assortment of things I find interesting enough to write about.
+              A random assortment of things I find interesting enough to write
+              about.
             </Subtitle>
           </header>
           <Body>

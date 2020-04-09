@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
-import logo from '../images/logo-black.svg'
+// import logo from '../images/logo-black.svg'
 
 const Container = styled.section`
   ${tw`container px-6 md:px-0 pt-12 pb-8 md:py-16 bg-grey-lightest text-center lg:text-left mt-12 md:mt-24`};
@@ -30,7 +30,7 @@ const PreFooter = () => (
     <Inner>
       <Row>
         <LogoLink to="/">
-          <LogoImage src={logo} alt="Logo" />
+          <LogoImage src="" alt="Logo" />
         </LogoLink>
       </Row>
       <Row>

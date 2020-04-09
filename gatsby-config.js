@@ -28,7 +28,7 @@ module.exports = {
     title: 'Julian Stephens',
     author: 'Julian Stephens',
     description:
-      'Fourth-year computer science student at Georgia Tech. I\'m a designer who codes.',
+      'Third-year computer science student at Georgia Tech. I\'m a designer who codes.',
     siteUrl,
     social: {
       twitter: '',

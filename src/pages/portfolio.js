@@ -35,9 +35,7 @@ class PortfolioPage extends React.Component {
         />
         <Hero>
           <div>
-            <Title>
-              A collection of my recent projects and internships.
-            </Title>
+            <Title>A collection of my recent projects and internships.</Title>
           </div>
         </Hero>
         <Section>
