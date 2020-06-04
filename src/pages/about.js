@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import SEO from '../components/seo'
 
 import Layout from '../components/layout'
@@ -15,6 +16,10 @@ const Title = styled.h2`
 const Body = styled.div`
   ${tw`text-lg`};
 `
+const Image = styled(Img)`
+  ${tw`text-red mt-6 mb-8 md:mb-12 rounded`};
+`
+
 class AboutPage extends React.Component {
   render() {
     const [aboutHeadline] = get(this, 'props.data.allContentfulAbout.edges')
@@ -30,7 +35,8 @@ class AboutPage extends React.Component {
           keywords={[`design`, `blog`, `ui`, `ux`, `gatsby`, `react`]}
         />
         <Wrapper>
-          <Title>{aboutHeadline.node.headline}</Title>
+          <Image fluid={aboutHeadline.node.headshot.fluid} />
+          {/* <Title>{aboutHeadline.node.headline}</Title> */}
           <Body
             dangerouslySetInnerHTML={{
               __html: aboutBody.node.childMarkdownRemark.html,
@@ -50,6 +56,16 @@ export const pageQuery = graphql`
       edges {
         node {
           headline
+          headshot {
+            fluid(
+              maxWidth: 300
+              maxHeight: 300
+              quality: 100
+              resizingBehavior: FILL
+            ) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
         }
       }
     }
