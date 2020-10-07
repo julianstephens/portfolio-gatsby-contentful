@@ -800,6 +800,7 @@ module.exports = {
 
   svgFill: {
     current: 'currentColor',
+    blue: colors.blue
   },
 
   /*

@@ -7,15 +7,26 @@ const Container = styled.footer`
 const Inner = styled.div`
   ${tw`opacity-75 my-2`};
 `
+const SocialLink = styled('a')`
+  ${tw`no-underline shadow-none mx-1`}
+`
 
 const Footer = () => (
   <Container>
     {/* <Inner>
-      Site built with <a href="https://www.gatsbyjs.org/">Gatsby</a>,{' '}
-      <a href="https://tailwindcss.com/">Tailwind</a> and beer. Content served
-      from <a href="https://www.contentful.com/">Contentful</a>.
+      No copyright here :)
     </Inner> */}
     <Inner></Inner>
+    <Inner>
+      Check me out on 
+      <SocialLink href="https://github.com/julianstephens">
+        Github
+      </SocialLink>
+      or 
+      <SocialLink href="https://linkedin.com/in/juliangstephens">
+        LinkedIn
+      </SocialLink>
+    </Inner>
   </Container>
 )
 
