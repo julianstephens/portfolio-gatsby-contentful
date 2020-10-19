@@ -67,6 +67,13 @@ module.exports = {
               wrapperStyle: '',
             },
           },
+		  {
+          resolve: `gatsby-remark-highlight-code`,
+			options: {
+			  terminal: 'carbon',
+			  theme: 'one-light'
+			},
+		  },
         ],
       },
     },
