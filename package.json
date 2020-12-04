@@ -31,6 +31,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-highlight-code": "^2.1.0",
     "gatsby-remark-images-contentful": "^2.1.27",
+    "gatsby-remark-numbered-footnotes": "^1.0.1",
     "gatsby-source-contentful": "^2.1.69",
     "gatsby-transformer-remark": "^2.6.42",
     "gatsby-transformer-sharp": "^2.3.9",

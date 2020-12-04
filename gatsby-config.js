@@ -74,6 +74,7 @@ module.exports = {
               theme: 'one-light'
             },
           },
+          'gatsby-remark-numbered-footnotes'
         ],
       },
     },
