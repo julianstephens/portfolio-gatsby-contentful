@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import PreviewCase from '../components/case-preview'
+import PreviewBlog from '../components/blog-preview'
 
 const Hero = styled.div`
   ${tw`w-full md:max-w-md xl:max-w-lg md:h-screen-60 flex items-center my-10 md:my-0`};
@@ -55,6 +56,9 @@ class IndexPage extends React.Component {
             {cases.map(({ node }) => {
               return <PreviewCase entry={node} key={node.slug} />
             })}
+            {posts.map(({ node }) => {
+              return <PreviewBlog article={node} key={node.slug} />
+            })}
           </Articles>
         </Section>
       </Layout>
@@ -73,7 +77,7 @@ export const pageQuery = graphql`
     }
     allContentfulPortfolioEntry(
       sort: { fields: [publishDate], order: DESC }
-      limit: 6
+      limit: 3
       filter: { promoteCase: { ne: false } }
     ) {
       edges {
@@ -89,6 +93,28 @@ export const pageQuery = graphql`
             }
           }
           clientColor
+          description
+        }
+      }
+    }
+    allContentfulBlogPost(
+      sort: {fields: [publishDate], order: DESC}, 
+      limit: 3, 
+      filter: {promoteArticle: {ne: false}}
+      ) {
+      edges {
+        node {
+          title
+          concept
+          slug
+          publishDate(formatString: "MMMM Do, YYYY")
+          tags
+          heroImage {
+            fluid(maxWidth: 1200, maxHeight: 875, resizingBehavior: FILL) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+          postColor
           description
         }
       }

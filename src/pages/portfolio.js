@@ -29,8 +29,8 @@ class PortfolioPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Portfolio - Patrik Arvidsson"
-          description="Clients I've worked with and projects I've been involved in throughout the years."
+          title="Portfolio - Julian Stephens"
+          description="A collection of my recent projects and internships."
           keywords={[`design`, `portfolio`, `ui`, `ux`, `case`]}
         />
         <Hero>

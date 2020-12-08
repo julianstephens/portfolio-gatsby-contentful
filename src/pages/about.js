@@ -30,7 +30,7 @@ class AboutPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="About Julian"
+          title="About - Julian Stephens"
           description="Julian is a third-year computer science student at Georgia Tech. He likes to think of himself as a designer who codes."
           keywords={[`design`, `blog`, `ui`, `ux`, `gatsby`, `react`]}
         />

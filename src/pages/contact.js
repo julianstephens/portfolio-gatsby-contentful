@@ -47,7 +47,7 @@ class ContactPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Contact Julian"
+          title="Contact - Julian Stephens"
           description="Julian is a fourth-year computer science student at Georgia Tech. He likes to think of himself as a designer who codes."
           keywords={[`design`, `blog`, `ui`, `ux`, `gatsby`, `react`]}
         />
